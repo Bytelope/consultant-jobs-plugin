@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "consultant-jobs": {
+      "type": "http",
+      "url": "https://mcp.consultant.dev/mcp"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "consultant-jobs",
+  "displayName": "Consultant Jobs",
+  "version": "1.0.0",
+  "description": "Search live consulting, contractor, and freelance assignments worldwide with Consultant.dev.",
+  "author": {
+    "name": "Bytelope AB",
+    "url": "https://consultant.dev"
+  },
+  "homepage": "https://consultant.dev/mcp/docs?utm_source=claude&utm_medium=plugin&utm_campaign=mcp_distribution",
+  "repository": "https://github.com/Bytelope/consultant-jobs-plugin",
+  "license": "MIT",
+  "keywords": [
+    "consulting",
+    "contractor",
+    "freelance",
+    "assignments",
+    "jobs",
+    "mcp"
+  ]
+}

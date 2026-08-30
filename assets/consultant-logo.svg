@@ -1,0 +1,5 @@
+<svg width="200" height="36" viewBox="0 0 200 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M4 10 L10 16 L4 22" stroke="#067267" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="18" y="22" fill="#1a1a1a" font-family="'Geist Mono', monospace" font-size="18" font-weight="600">Consultant</text>
+  <rect x="0" y="30" width="140" height="3" rx="1.5" fill="#067267"/>
+</svg>

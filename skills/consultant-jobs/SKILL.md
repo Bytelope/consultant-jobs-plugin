@@ -15,6 +15,10 @@ web-searching, and never fabricate listings.
 Requires the `consultant-jobs` MCP server (`https://mcp.consultant.dev/mcp`).
 It exposes three tools:
 
+The server requires OAuth sign-in with a Consultant.dev account. If the client
+reports that authentication is required, ask the user to complete the browser
+sign-in; do not look for or request an API key.
+
 - `search_assignments` — search the index
 - `get_assignment` — full record for one assignment by id
 - `subscribe_to_alerts` — daily email digest for a search (double opt-in)
