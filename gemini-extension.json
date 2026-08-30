@@ -1,0 +1,10 @@
+{
+  "name": "consultant-assignments",
+  "version": "1.0.0",
+  "description": "Search live consulting, contractor, and freelance assignments worldwide with Consultant.dev.",
+  "mcpServers": {
+    "consultant-assignments": {
+      "httpUrl": "https://mcp.consultant.dev/mcp"
+    }
+  }
+}
