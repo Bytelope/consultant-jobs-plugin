@@ -25,6 +25,24 @@ data, private logs, or private deployment configuration here.
 6. Install from the catalog in a clean Claude profile and repeat the account
    flow.
 
+### Reviewer verification path
+
+Reviewers can create a fresh Consultant.dev account during OAuth. No invite,
+subscription, payment card, or allowlist entry is required:
+
+1. Install the wrapper and start a Consultant Assignments search.
+2. Create or sign in to the Consultant.dev account in the browser window.
+3. Run `search_assignments`.
+4. Pass one returned assignment ID to `get_assignment`.
+5. Disconnect the server, reconnect, and verify OAuth is requested again.
+
+Never publish a shared reviewer password. If Anthropic explicitly requests a
+dedicated credential, deliver it only through Anthropic's private reviewer
+channel. Reviewer policy and support links are [Privacy](PRIVACY.md),
+[Support](SUPPORT.md), [Security](SECURITY.md),
+[Consultant.dev privacy](https://consultant.dev/privacy), and
+[Consultant.dev terms](https://consultant.dev/terms).
+
 The forms submit to `claude-community`, not Anthropic's separately curated
 official marketplace. Anthropic does not publish an application process for
 the official marketplace.
