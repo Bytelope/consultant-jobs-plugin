@@ -1,0 +1,23 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "dev.consultant/assignments",
+  "title": "Consultant.dev",
+  "description": "Search live consulting, contractor, and freelance assignments worldwide. Account required.",
+  "version": "1.0.0",
+  "websiteUrl": "https://consultant.dev/mcp/docs?utm_source=mcp_registry&utm_medium=directory&utm_campaign=mcp_distribution",
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/Bytelope/consultant-jobs-plugin/main/assets/consultant-icon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": [
+        "any"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.consultant.dev/mcp"
+    }
+  ]
+}
