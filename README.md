@@ -85,6 +85,12 @@ Registration. Every authorization completes through a Consultant.dev account.
 
 ## Gemini CLI
 
+Install the public Gemini CLI extension:
+
+```bash
+gemini extensions install https://github.com/Bytelope/consultant-jobs-plugin
+```
+
 Gemini CLI can connect directly using Streamable HTTP with automatic OAuth
 discovery. See the [Gemini CLI installation guide](GEMINI.md). A Consultant.dev
 account is required.

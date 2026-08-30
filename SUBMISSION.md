@@ -69,6 +69,17 @@ the official marketplace.
    https://registry.modelcontextprotocol.io/v0.1/servers?search=dev.consultant/assignments
    ```
 
+## Gemini CLI Extension Gallery
+
+1. Keep `gemini-extension.json` in the repository root.
+2. Keep the repository public and add the `gemini-cli-extension` GitHub topic.
+3. Ensure the manifest version matches the release tag.
+4. Create a non-prerelease GitHub release. Gemini's crawler scans tagged
+   repositories daily and lists valid extensions automatically; there is no
+   submission form.
+5. Verify the listing in the
+   [Gemini CLI Extension Gallery](https://geminicli.com/extensions/browse/).
+
 ## Release and attribution
 
 - Keep the plugin manifest and `server.json` versions aligned.

@@ -5,7 +5,17 @@ can discover Consultant.dev OAuth automatically.
 
 ## Install
 
-Add Consultant Assignments to your user-level Gemini CLI configuration:
+Install Consultant Assignments as a Gemini CLI extension:
+
+```bash
+gemini extensions install https://github.com/Bytelope/consultant-jobs-plugin
+```
+
+Restart Gemini CLI after installation. It will connect to the hosted MCP server
+and open Consultant.dev sign-in when authentication is required.
+
+Alternatively, add Consultant Assignments directly to your user-level Gemini
+CLI configuration:
 
 ```bash
 gemini mcp add --transport http --scope user \
@@ -50,6 +60,12 @@ This should call `search_assignments`, followed by `get_assignment` with the
 returned assignment ID.
 
 ## Disconnect
+
+If you installed the extension, remove it with:
+
+```bash
+gemini extensions uninstall consultant-assignments
+```
 
 Use `/mcp auth consultant-assignments` to re-authenticate when needed, or remove
 the server completely:
