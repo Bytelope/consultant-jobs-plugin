@@ -38,8 +38,13 @@ the official marketplace.
 3. Authenticate the `dev.consultant` namespace using Consultant.dev domain
    ownership. Follow the registry's
    [authentication guide](https://modelcontextprotocol.io/registry/authentication).
-4. Run `mcp-publisher publish` from the repository root.
-5. Verify:
+4. Ensure the repository Actions secret `MCP_PRIVATE_KEY` contains the raw
+   Ed25519 private key matching the public Consultant.dev domain proof.
+5. Run the manual `Publish to MCP Registry` GitHub Actions workflow. The
+   workflow downloads a pinned `mcp-publisher` release, verifies its checksum,
+   authenticates the `consultant.dev` namespace, publishes `server.json`, and
+   verifies the resulting registry entry.
+6. Verify:
 
    ```text
    https://registry.modelcontextprotocol.io/v0.1/servers?search=dev.consultant/assignments
