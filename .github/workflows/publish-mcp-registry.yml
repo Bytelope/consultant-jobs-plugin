@@ -42,7 +42,7 @@ jobs:
         run: |
           set -euo pipefail
           test -n "${MCP_PRIVATE_KEY}"
-          ./mcp-publisher login dns \
+          ./mcp-publisher login http \
             --domain consultant.dev \
             --private-key "${MCP_PRIVATE_KEY}"
 
