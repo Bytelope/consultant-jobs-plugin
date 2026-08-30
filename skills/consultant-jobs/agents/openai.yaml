@@ -1,5 +1,5 @@
 interface:
-  display_name: "Consultant Jobs"
+  display_name: "Consultant Assignments"
   short_description: "Search live consulting, contractor, and freelance assignments worldwide via consultant.dev"
   brand_color: "#0EA5E9"
 

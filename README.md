@@ -2,7 +2,7 @@
   <img src="assets/consultant-logo.svg" alt="Consultant.dev" width="200">
 </p>
 
-# Consultant Jobs
+# Consultant Assignments
 
 Search live consulting, contractor, and freelance assignments worldwide from
 Claude, ChatGPT, and other MCP clients.
@@ -49,8 +49,8 @@ git clone https://github.com/Bytelope/consultant-jobs-plugin.git
 claude --plugin-dir ./consultant-jobs-plugin
 ```
 
-Run `/mcp` and select Consultant Jobs, or make a search request. Claude opens
-the Consultant.dev sign-in flow in your browser.
+Run `/mcp` and select Consultant Assignments, or make a search request. Claude
+opens the Consultant.dev sign-in flow in your browser.
 
 ## Install for Codex and ChatGPT
 

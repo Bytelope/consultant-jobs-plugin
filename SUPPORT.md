@@ -6,12 +6,12 @@ Install and enable the plugin, then ask Claude to search for a consulting
 assignment. Claude opens the Consultant.dev OAuth flow in your browser. Sign in
 or create an account, approve access, and return to Claude.
 
-In Claude Code, you can also open `/mcp`, select the Consultant Jobs server,
-and start authentication there.
+In Claude Code, you can also open `/mcp`, select the Consultant Assignments
+server, and start authentication there.
 
 ## Disconnect
 
-Open `/mcp`, select the Consultant Jobs server, and clear its stored
+Open `/mcp`, select the Consultant Assignments server, and clear its stored
 authentication. From the command line, use `claude mcp list` to find the
 server's displayed name and `claude mcp logout <name>` to clear its credentials.
 
