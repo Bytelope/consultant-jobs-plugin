@@ -39,7 +39,8 @@ the official marketplace.
    ownership. Follow the registry's
    [authentication guide](https://modelcontextprotocol.io/registry/authentication).
 4. Ensure the repository Actions secret `MCP_PRIVATE_KEY` contains the raw
-   Ed25519 private key matching the public Consultant.dev domain proof.
+   Ed25519 private key matching the proof served from
+   `https://consultant.dev/.well-known/mcp-registry-auth`.
 5. Run the manual `Publish to MCP Registry` GitHub Actions workflow. The
    workflow downloads a pinned `mcp-publisher` release, verifies its checksum,
    authenticates the `consultant.dev` namespace, publishes `server.json`, and
