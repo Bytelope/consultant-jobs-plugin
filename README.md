@@ -83,6 +83,12 @@ The server publishes OAuth discovery metadata and supports pre-registered
 clients, Client ID Metadata Documents, and constrained Dynamic Client
 Registration. Every authorization completes through a Consultant.dev account.
 
+## Gemini CLI
+
+Gemini CLI can connect directly using Streamable HTTP with automatic OAuth
+discovery. See the [Gemini CLI installation guide](GEMINI.md). A Consultant.dev
+account is required.
+
 ## Repository scope
 
 This repository intentionally contains only:
