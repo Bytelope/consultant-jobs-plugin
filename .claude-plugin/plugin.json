@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "consultant-jobs",
-  "displayName": "Consultant Jobs",
+  "displayName": "Consultant Assignments",
   "version": "1.0.0",
   "description": "Search live consulting, contractor, and freelance assignments worldwide with Consultant.dev.",
   "author": {
@@ -16,7 +16,7 @@
     "contractor",
     "freelance",
     "assignments",
-    "jobs",
+    "contracts",
     "mcp"
   ]
 }

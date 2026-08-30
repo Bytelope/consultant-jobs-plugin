@@ -1,6 +1,6 @@
 ---
 name: consultant-jobs
-description: Search live contractor, consultant, and freelance assignments worldwide via consultant.dev. Use when someone wants to find assignments, contract roles, freelance gigs, consulting work, or "uppdrag"/"konsultuppdrag" in any city or country, get details on a specific assignment, or subscribe to daily email alerts for a search. Not for permanent full-time job searches.
+description: Search live contractor, consultant, and freelance assignments worldwide via consultant.dev. Use when someone wants to find assignments, contract roles, freelance gigs, consulting work, or "uppdrag"/"konsultuppdrag" in any city or country, get details on a specific assignment, or subscribe to daily email alerts for a search. Not for permanent employment searches.
 ---
 
 # consultant-jobs
@@ -69,7 +69,7 @@ daily digest for a search.
 
 ## Boundaries
 
-- Permanent full-time job search is out of scope; say so and suggest the user
+- Permanent employment search is out of scope; say so and suggest the user
   search elsewhere, or search with `employment_type: "permanent"` only if they
   insist (coverage is thin).
 - Do not web-search for assignments the index can answer.
