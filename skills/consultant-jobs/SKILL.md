@@ -13,7 +13,7 @@ web-searching, and never fabricate listings.
 ## Tools
 
 Requires the `consultant-jobs` MCP server (`https://mcp.consultant.dev/mcp`).
-It exposes five tools:
+It exposes four tools:
 
 The server requires OAuth sign-in with a Consultant.dev account. If the client
 reports that authentication is required, ask the user to complete the browser
@@ -23,7 +23,6 @@ sign-in; do not look for or request an API key.
 - `get_assignment` — full record for one assignment by id
 - `upload_cv` — upload the user's CV so assignments are scored against it
 - `my_matches` — list assignments matched to the user's CV, best first
-- `refresh_matches` — re-score the saved CV for fresh matches
 
 ## Searching well
 
@@ -70,9 +69,8 @@ your CV?"
    accept on their behalf.
 3. Matching takes about a minute. Then call `my_matches` and summarize the
    top results with titles, locations and why they fit.
-4. Use `refresh_matches` only when the user asks for fresh matches. Manual
-   refreshes may be limited to once a day; pass on when the next one is
-   available.
+4. Matches update automatically every morning. If the user wants fresh
+   matches, call `my_matches` again; there is no manual refresh.
 
 ## Boundaries
 

@@ -2,8 +2,9 @@
 
 ## 1.1.0
 
-- Document the CV tools: `upload_cv`, `my_matches`, `refresh_matches`.
-- Remove `subscribe_to_alerts`, which the hosted server no longer offers.
+- Document the CV tools: `upload_cv` and `my_matches`.
+- Remove `subscribe_to_alerts` and `refresh_matches`, which the hosted server no
+  longer offers. Matches update automatically every morning.
 
 ## 1.0.0
 
