@@ -1,6 +1,6 @@
 ---
 name: consultant-jobs
-description: Search live contractor, consultant, and freelance assignments worldwide via consultant.dev. Use when someone wants to find assignments, contract roles, freelance gigs, consulting work, or "uppdrag"/"konsultuppdrag" in any city or country, get details on a specific assignment, or subscribe to daily email alerts for a search. Not for permanent employment searches.
+description: Search live contractor, consultant, and freelance assignments worldwide via consultant.dev. Use when someone wants to find assignments, contract roles, freelance gigs, consulting work, or "uppdrag"/"konsultuppdrag" in any city or country, get details on a specific assignment, or get assignments matched to their CV. Not for permanent employment searches.
 ---
 
 # consultant-jobs
@@ -13,7 +13,7 @@ web-searching, and never fabricate listings.
 ## Tools
 
 Requires the `consultant-jobs` MCP server (`https://mcp.consultant.dev/mcp`).
-It exposes three tools:
+It exposes five tools:
 
 The server requires OAuth sign-in with a Consultant.dev account. If the client
 reports that authentication is required, ask the user to complete the browser
@@ -21,7 +21,9 @@ sign-in; do not look for or request an API key.
 
 - `search_assignments` — search the index
 - `get_assignment` — full record for one assignment by id
-- `subscribe_to_alerts` — daily email digest for a search (double opt-in)
+- `upload_cv` — upload the user's CV so assignments are scored against it
+- `my_matches` — list assignments matched to the user's CV, best first
+- `refresh_matches` — re-score the saved CV for fresh matches
 
 ## Searching well
 
@@ -52,20 +54,25 @@ sign-in; do not look for or request an API key.
 - If a search returns zero results, retry once with a broader query or without
   the location before telling the user nothing exists.
 
-## Email alerts
+## CV matching
 
-`subscribe_to_alerts(email, query?, location?, employment_type?)` creates a
-daily digest for a search.
+Offer this when the user asks what suits them, or when they have searched a
+few times and personal matches would help: "Want me to match assignments to
+your CV?"
 
-- Only call it when the user explicitly asks for alerts/notifications AND has
-  given the email address to use. Never guess or reuse an email address
-  without asking.
-- Subscription is double opt-in: tell the user a confirmation email was sent
-  and the alert activates once they click the link.
-- `alreadyExists: true` means they are already subscribed to that search —
-  say so; do not resubscribe.
-- On a rate-limit error ("too many alert requests"), tell the user to wait a
-  minute. Do not retry automatically.
+1. Call `upload_cv` only when the user wants their CV uploaded. Tell them
+   first that it replaces any CV already on their account, that it is read
+   by AI to extract skills and experience, and that match emails are on for
+   accounts with a CV (they can turn them off or remove the CV on
+   consultant.dev anytime).
+2. If the tool says AI processing consent is missing, send the user to the
+   link it returns to accept it once on consultant.dev, then try again. Do not
+   accept on their behalf.
+3. Matching takes about a minute. Then call `my_matches` and summarize the
+   top results with titles, locations and why they fit.
+4. Use `refresh_matches` only when the user asks for fresh matches. Manual
+   refreshes may be limited to once a day; pass on when the next one is
+   available.
 
 ## Boundaries
 

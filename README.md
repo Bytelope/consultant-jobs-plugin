@@ -20,14 +20,14 @@ A Consultant.dev account is required. There is no anonymous tool access.
 - Searches live contract, consulting, and freelance assignments across fields
   and countries.
 - Fetches the complete details for a specific assignment.
-- Creates double-opt-in daily email alerts when you explicitly request one.
+- Matches assignments to your CV when you ask it to, and lists your best matches.
 
 Example prompts:
 
 - “Find senior product design contracts in London, including remote roles.”
 - “Show me the newest freelance data engineering assignments in Sweden.”
 - “Get the full details for this Consultant.dev assignment ID.”
-- “Email me a daily alert for interim CFO assignments in Germany.”
+- “Here is my CV. Which assignments suit me?”
 
 ## Install for Claude
 

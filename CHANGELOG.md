@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.0
+
+- Document the CV tools: `upload_cv`, `my_matches`, `refresh_matches`.
+- Remove `subscribe_to_alerts`, which the hosted server no longer offers.
+
 ## 1.0.0
 
 - Add Gemini CLI extension manifest for Extension Gallery distribution.
